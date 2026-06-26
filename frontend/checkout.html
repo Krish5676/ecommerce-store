@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | Premium Store</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+    <i class="fa-solid fa-crown me-2"></i>
+    PremiumStore
+</a>
+
+
+<div class="d-flex gap-3 nav-icons">
+
+<a href="wishlist.html">
+<i class="fa-solid fa-heart fs-5"></i>
+</a>
+
+<a href="cart.html">
+<i class="fa-solid fa-cart-shopping fs-5"></i>
+</a>
+
+<a href="profile.html">
+<i class="fa-solid fa-user fs-5"></i>
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HEADER -->
+
+<section class="py-5 bg-light">
+
+<div class="container text-center">
+
+<h1 class="display-4 fw-bold">
+Checkout
+</h1>
+
+<p class="text-secondary">
+Complete Your Purchase
+</p>
+
+</div>
+
+</section>
+
+<!-- CHECKOUT -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="row">
+
+<!-- ADDRESS -->
+
+<div class="col-lg-7">
+
+<div class="card border-0 shadow-sm rounded-4 mb-4">
+
+<div class="card-body p-4">
+
+<h3 class="mb-4">
+Shipping Address
+</h3>
+
+<textarea
+id="address"
+class="form-control"
+rows="5"
+placeholder="Enter Delivery Address"
+></textarea>
+
+<button
+id="updateAddressBtn"
+class="btn btn-dark mt-3"
+>
+Update Address
+</button>
+
+</div>
+
+</div>
+
+<!-- PAYMENT -->
+
+<div class="card border-0 shadow-sm rounded-4">
+
+<div class="card-body p-4">
+
+<h3 class="mb-4">
+Payment Method
+</h3>
+
+<div class="form-check mb-3">
+
+<input
+class="form-check-input"
+type="radio"
+name="payment"
+value="cod"
+checked
+>
+
+<label class="form-check-label">
+Cash On Delivery
+</label>
+
+</div>
+
+<div class="form-check">
+
+<input
+class="form-check-input"
+type="radio"
+name="payment"
+value="online"
+>
+
+<label class="form-check-label">
+Online Payment (Razorpay)
+</label>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SUMMARY -->
+
+<div class="col-lg-5">
+
+<div class="card border-0 shadow rounded-4">
+
+<div class="card-body p-4">
+
+<h3 class="mb-4">
+Order Summary
+</h3>
+
+<div id="checkoutItems">
+
+</div>
+
+<hr>
+
+<div class="d-flex justify-content-between">
+
+<h5>Total</h5>
+
+<h5 id="totalAmount">
+₹0
+</h5>
+
+</div>
+
+<button
+id="placeOrderBtn"
+class="btn btn-dark w-100 mt-4 rounded-pill"
+>
+
+Place Order
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container text-center">
+
+<h4>
+PremiumStore
+</h4>
+
+<p>
+Luxury Ecommerce Experience
+</p>
+
+</div>
+
+</footer>
+<script src="js/config.js"></script>
+<script src="js/checkout.js"></script>
+
+</body>
+</html>
